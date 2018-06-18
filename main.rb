@@ -7,7 +7,7 @@ end
 
 EnvInspector::Inspector.check!
 
-TOKEN = 'OREL_CODES_TELEGRAM_BOT_TOKEN'
+TOKEN = ENV['OREL_CODES_TELEGRAM_BOT_TOKEN']
 
 Telegram::Bot::Client.run(TOKEN) do |bot|
   bot.listen do |message|
